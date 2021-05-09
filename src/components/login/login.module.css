@@ -1,0 +1,37 @@
+@value makerGray, makerLightGray, makerWhite from '/src/common/colors.css';
+
+.loginContainer {
+  width: 380px;
+  text-align: center;
+  padding: 36px 44px;
+  background-color: makerWhite;
+  border-radius: 8px;
+}
+
+.description {
+  color: makerLightGray;
+}
+
+.loginItem {
+  margin-bottom: 24px;
+}
+
+.loginItem:nth-child(1) {
+  margin-top: 24px;
+}
+
+.loginBtn {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid makerLightGray;
+  border-radius: 100px;
+  padding: 12px 48px;
+  color: makerLightGray;
+  background-color: makerWhite;
+  cursor: pointer;
+}
+
+.loginBtn:hover {
+  color: makerGray;
+}
