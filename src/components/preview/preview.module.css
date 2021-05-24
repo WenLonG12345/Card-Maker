@@ -1,0 +1,8 @@
+.preview {
+  flex-basis: 50%;
+  background-color: orange;
+}
+
+.title {
+  text-align: center;
+}
