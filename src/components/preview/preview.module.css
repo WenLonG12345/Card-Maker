@@ -1,6 +1,10 @@
 .preview {
   flex-basis: 50%;
-  background-color: orange;
+  background-color: rgb(247, 244, 244);
+}
+
+.cardList {
+  padding: 1em;
 }
 
 .title {
