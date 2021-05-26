@@ -1,8 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 html, body, main, footer, div, span, p, ol, ul, li, /**/ 
 h1, h2, h3, h4, h5, h6, em, strong, address {
   margin: 0;
   vertical-align: baseline;
-  box-sizing: border-box;
 }
 
 body {
