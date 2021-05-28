@@ -1,15 +1,39 @@
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   flex-basis: 50%;
+  border: 1px solid lightgray;
+  background-color: white;
 }
+
 .button {
   width: 100%;
   height: 100%;
   outline: none;
   border: none;
-  background-color: white;
-  border: 1px solid lightgray;
 }
 
 .input {
   display: none;
+}
+
+.loading {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 3px solid lightgray;
+  border-top: 3px solid oldlace;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
