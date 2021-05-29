@@ -7,38 +7,7 @@ import Preview from '../preview/preview';
 import styles from './maker.module.css';
 
 const Maker = ({ FileInput, authService }) => {
-  const [cards, setCards] = useState({
-    1: {
-      id: '1',
-      name: '김병연',
-      title: '고기굽기 1급',
-      message: '',
-      fileName: '',
-      fileURL: null,
-      theme: 'dark',
-      cardMaker: null,
-    },
-    2: {
-      id: '2',
-      name: '이종수',
-      title: '헬창 2급',
-      message: '3대 420kg',
-      fileName: '',
-      fileURL: null,
-      theme: 'light',
-      cardMaker: '발행 : 김병연',
-    },
-    3: {
-      id: '3',
-      name: '남길현',
-      title: '아재 1급',
-      message: '특수아재형',
-      fileName: '',
-      fileURL: null,
-      theme: 'colorful',
-      cardMaker: null,
-    },
-  });
+  const [cards, setCards] = useState({});
 
   const history = useHistory();
   const onLogout = () => {

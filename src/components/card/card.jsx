@@ -5,7 +5,7 @@ const DEFAULT_MAKER = 'Card Maker';
 const DEFAULT_IMAGE = '/images/default_logo.png';
 
 const Card = ({ card }) => {
-  const { name, title, message, fileName, fileURL, theme, cardMaker } = card;
+  const { name, title, message, fileURL, theme, cardMaker } = card;
   const url = fileURL || DEFAULT_IMAGE;
   const maker = cardMaker || DEFAULT_MAKER;
 

@@ -27,7 +27,7 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
       [event.currentTarget.name]: event.currentTarget.value,
     });
   };
-  const { name, title, message, fileName, fileURL, theme, cardMaker } = card;
+  const { name, title, message, fileName, theme, cardMaker } = card;
   const onSubmit = () => {
     deleteCard(card);
   };
