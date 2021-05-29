@@ -34,7 +34,8 @@
 }
 
 .avatar {
-  max-width: 35%;
+  width: 9.75rem;
+  height: 9.75rem;
   padding: 1em;
   border-radius: 50%;
 }

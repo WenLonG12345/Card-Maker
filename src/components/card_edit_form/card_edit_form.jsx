@@ -49,6 +49,14 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
         value={title}
         onChange={onChange}
       />
+      <input
+        ref={cardMakerRef}
+        className={styles.input}
+        type='text'
+        name='cardMaker'
+        value={cardMaker}
+        onChange={onChange}
+      />
       <select
         ref={themeRef}
         className={styles.select}
@@ -60,14 +68,6 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
         <option value='dark'>dark</option>
         <option value='colorful'>colorful</option>
       </select>
-      <input
-        ref={cardMakerRef}
-        className={styles.input}
-        type='text'
-        name='cardMaker'
-        value={cardMaker}
-        onChange={onChange}
-      />
       <textarea
         ref={messageRef}
         className={styles.textarea}

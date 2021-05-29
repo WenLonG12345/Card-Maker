@@ -52,6 +52,13 @@ const CardAddForm = ({ FileInput, onAdd }) => {
         name='title'
         placeholder='title'
       />
+      <input
+        ref={cardMakerRef}
+        className={styles.input}
+        type='text'
+        name='cardMaker'
+        placeholder='cardMaker'
+      />
       <select
         ref={themeRef}
         className={styles.select}
@@ -62,13 +69,6 @@ const CardAddForm = ({ FileInput, onAdd }) => {
         <option placeholder='dark'>dark</option>
         <option placeholder='colorful'>colorful</option>
       </select>
-      <input
-        ref={cardMakerRef}
-        className={styles.input}
-        type='text'
-        name='cardMaker'
-        placeholder='cardMaker'
-      />
       <textarea
         ref={messageRef}
         className={styles.textarea}
