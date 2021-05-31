@@ -39,6 +39,7 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
         type='text'
         name='name'
         value={name}
+        placeholder='Name'
         onChange={onChange}
       />
       <input
@@ -47,6 +48,7 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
         type='text'
         name='title'
         value={title}
+        placeholder='Title'
         onChange={onChange}
       />
       <input
@@ -55,6 +57,7 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
         type='text'
         name='cardMaker'
         value={cardMaker}
+        placeholder='Maker'
         onChange={onChange}
       />
       <select
@@ -73,6 +76,7 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
         className={styles.textarea}
         name='message'
         value={message}
+        placeholder='Message'
         onChange={onChange}
       ></textarea>
       <FileInput name={fileName} onFileChange={onFileChange} />

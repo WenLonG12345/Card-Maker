@@ -43,28 +43,23 @@ const CardAddForm = ({ FileInput, onAdd }) => {
         className={styles.input}
         type='text'
         name='name'
-        placeholder='name'
+        placeholder='Name'
       />
       <input
         ref={titleRef}
         className={styles.input}
         type='text'
         name='title'
-        placeholder='title'
+        placeholder='Title'
       />
       <input
         ref={cardMakerRef}
         className={styles.input}
         type='text'
         name='cardMaker'
-        placeholder='cardMaker'
+        placeholder='Maker'
       />
-      <select
-        ref={themeRef}
-        className={styles.select}
-        name='theme'
-        placeholder='theme'
-      >
+      <select ref={themeRef} className={styles.select} name='theme'>
         <option placeholder='light'>light</option>
         <option placeholder='dark'>dark</option>
         <option placeholder='colorful'>colorful</option>
@@ -73,7 +68,7 @@ const CardAddForm = ({ FileInput, onAdd }) => {
         ref={messageRef}
         className={styles.textarea}
         name='message'
-        placeholder='message'
+        placeholder='Message'
       ></textarea>
       <FileInput name={file.fileName} onFileChange={onFileChange} />
       <Button name='Add' onClick={onSubmit} />

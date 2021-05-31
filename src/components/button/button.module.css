@@ -1,5 +1,14 @@
+@value makerFormBorder, makerThemeColor, makerWhite from '/src/common/colors.css';
+
 .button {
   flex-basis: 50%;
-  background-color: white;
-  border: 1px solid lightgray;
+  background-color: makerWhite;
+  border: none;
+  border-top: 1px solid makerFormBorder;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: makerThemeColor;
+  color: makerWhite;
 }

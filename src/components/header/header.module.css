@@ -1,4 +1,4 @@
-@value makerGray, makerWhite, makerThemeColor, makerBlue, makerLightGray from '/src/common/colors.css';
+@value makerGray, makerWhite, makerThemeColor, makerBlue, makerDefaultBorder from '/src/common/colors.css';
 
 .header.onLogin {
   padding: 1em 0;
@@ -37,5 +37,5 @@
   border: none;
   cursor: pointer;
   color: makerThemeColor;
-  border: 1px solid makerLightGray;
+  border: 1px solid makerDefaultBorder;
 }

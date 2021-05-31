@@ -1,41 +1,36 @@
+@value makerFormBorder, makerBlack, makerThemeColor, makerBoxShadow, makerBlue, makerDefaultBorder, makerWhite from '/src/common/colors.css';
+
 .card {
   position: relative;
   display: flex;
   align-items: center;
 
-  max-width: 30rem;
-  padding: 1em;
+  max-width: 35rem;
+  padding: 1.5em;
   margin: auto;
   margin-bottom: 1rem;
 
-  border: 1px solid #303030;
+  box-shadow: makerBoxShadow;
 }
 
 .card.dark {
-  background-color: black;
-  color: white;
+  background-color: makerBlack;
+  color: makerWhite;
 }
 
 .card.light {
-  background-color: white;
-  color: black;
+  background-color: makerWhite;
+  color: makerBlack;
 }
 
 .card.colorful {
-  background: linear-gradient(
-    61deg,
-    rgba(86, 22, 146, 1) 0%,
-    rgba(83, 62, 201, 1) 34%,
-    rgba(114, 128, 255, 1) 56%,
-    rgba(152, 159, 224, 1) 72%,
-    rgba(239, 239, 239, 1) 100%
-  );
-  color: white;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  color: makerBlack;
 }
 
 .avatar {
-  width: 9.75rem;
-  height: 9.75rem;
+  width: 10.75rem;
+  height: 10.75rem;
   padding: 1em;
   border-radius: 50%;
 }

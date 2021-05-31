@@ -1,8 +1,16 @@
+@value makerNavy, makerThemeColor from '/src/common/colors.css';
+
 .editor {
-  padding: 2em;
   flex-basis: 50%;
+  padding: 0 0.5rem;
 }
 
 .title {
-  text-align: center;
+  color: makerNavy;
+  font-size: 2rem;
+  font-weight: 600;
+  border-bottom: 1px solid #c3cfdd;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  cursor: default;
 }
