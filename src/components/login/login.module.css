@@ -1,11 +1,13 @@
-@value makerGray, makerLightGray, makerWhite from '/src/common/colors.css';
+@value makerLightGray, makerBoxShadow, makerThemeColor, makerWhite, makerDefaultBorder from '/src/common/colors.css';
 
 .loginContainer {
   width: 380px;
   text-align: center;
   padding: 36px 44px;
   background-color: makerWhite;
+  border: 1px solid makerDefaultBorder;
   border-radius: 8px;
+  box-shadow: makerBoxShadow;
 }
 
 .description {
@@ -33,5 +35,6 @@
 }
 
 .loginBtn:hover {
-  color: makerGray;
+  color: makerThemeColor;
+  border: 2px solid makerThemeColor;
 }

@@ -1,7 +1,9 @@
+@value makerThemeBg from '/src/common/colors.css';
+
 .loginWrap {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: makerThemeBg;
 }
