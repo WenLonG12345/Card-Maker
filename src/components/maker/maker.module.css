@@ -1,18 +1,21 @@
-@value mediaQuery from '../../common/size.css';
+@value mediaQuery from '/src/common/size.css';
+@value makerThemeBg from '/src/common/colors.css';
 
 .maker {
   display: flex;
   flex-direction: column;
 
   width: 100%;
+  max-width: 80rem;
   height: 100%;
   padding: 0 2em;
-  background-color: #f6f7f9;
+  background-color: makerThemeBg;
 }
 
 .container {
   display: flex;
   flex: 1;
+  min-height: 0;
 }
 
 @media screen and (max-width: mediaQuery) {

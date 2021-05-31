@@ -6,18 +6,20 @@ import styles from './editor.module.css';
 const Editor = ({ FileInput, cards, addCard, updateCard, deleteCard }) => (
   <section className={styles.editor}>
     <h1 className={styles.title}>Card Editor</h1>
-    {Object.keys(cards).map((key) => {
-      return (
-        <CardEditForm
-          key={key}
-          FileInput={FileInput}
-          card={cards[key]}
-          updateCard={updateCard}
-          deleteCard={deleteCard}
-        />
-      );
-    })}
-    <CardAddForm FileInput={FileInput} onAdd={addCard} />
+    <div className={styles.container}>
+      {Object.keys(cards).map((key) => {
+        return (
+          <CardEditForm
+            key={key}
+            FileInput={FileInput}
+            card={cards[key]}
+            updateCard={updateCard}
+            deleteCard={deleteCard}
+          />
+        );
+      })}
+      <CardAddForm FileInput={FileInput} onAdd={addCard} />
+    </div>
   </section>
 );
 
