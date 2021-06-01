@@ -1,6 +1,6 @@
+import firebaseApp from './firebase';
 import firebase from 'firebase/app';
 import 'firebase/auth';
-import firebaseApp from './firebase';
 
 class AuthService {
   login(providerName) {
