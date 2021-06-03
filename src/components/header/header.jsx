@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styles from './header.module.css';
 
-const Header = ({ onLogout }) => {
+const Header = memo(({ onLogout }) => {
   const displayType = onLogout ? styles.onLogout : styles.onLogin;
   const headingType = onLogout
     ? 'Card Maker'
     : '안녕하세요, CARD MAKER입니다! 🎉';
+
   return (
     <header className={`${styles.header} ${displayType}`}>
       {!onLogout && (
@@ -19,6 +20,6 @@ const Header = ({ onLogout }) => {
       )}
     </header>
   );
-};
+});
 
 export default Header;
