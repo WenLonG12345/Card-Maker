@@ -36,6 +36,15 @@ const CardAddForm = memo(({ FileInput, onAdd }) => {
     onAdd(card);
   };
 
+  const onChange = (event) => {
+    let len = event.currentTarget.value.length;
+    let maxLen = event.currentTarget.name === 'message' ? 30 : 12;
+    if (len > maxLen) {
+      return event.currentTarget.value = event.currentTarget.value.slice(0, maxLen);
+    }
+    console.log(event.currentTarget.value.length);
+  }
+
   return (
     <form ref={formRef} className={styles.form}>
       <input
@@ -43,21 +52,24 @@ const CardAddForm = memo(({ FileInput, onAdd }) => {
         className={styles.input}
         type='text'
         name='name'
-        placeholder='Name'
+        placeholder='Name (Max 12)'
+        onChange={onChange}
       />
       <input
         ref={titleRef}
         className={styles.input}
         type='text'
         name='title'
-        placeholder='Title'
+        placeholder='Title (Max 12)'
+        onChange={onChange}
       />
       <input
         ref={cardMakerRef}
         className={styles.input}
         type='text'
         name='cardMaker'
-        placeholder='Maker'
+        placeholder='Maker (Max 12)'
+        onChange={onChange}
       />
       <select ref={themeRef} className={styles.select} name='theme'>
         <option placeholder='light'>light</option>
@@ -68,7 +80,8 @@ const CardAddForm = memo(({ FileInput, onAdd }) => {
         ref={messageRef}
         className={styles.textarea}
         name='message'
-        placeholder='Message'
+        placeholder='Message (Max 30)'
+        onChange={onChange}
       ></textarea>
       <FileInput name={file.fileName} onFileChange={onFileChange} />
       <Button name='Add' onClick={onSubmit} />

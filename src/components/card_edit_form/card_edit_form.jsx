@@ -3,11 +3,8 @@ import styles from './card_edit_form.module.css';
 import Button from '../button/button';
 
 const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
-  const nameRef = useRef();
-  const titleRef = useRef();
-  const themeRef = useRef();
-  const cardMakerRef = useRef();
-  const messageRef = useRef();
+  const { messageRef, cardMakerRef, themeRef, titleRef, nameRef } = useRef();
+  const { name, title, message, fileName, theme, cardMaker } = card;
 
   const onFileChange = (file) => {
     updateCard({
@@ -18,19 +15,27 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
   };
 
   const onChange = (event) => {
+    event.preventDefault();
+    let len = event.currentTarget.value.length;
+    let maxLen = event.currentTarget.name === 'message' ? 30 : 12;
+    if (len > maxLen) {
+      return;
+    }
+
     if (event.currentTarget == null) {
       return;
     }
-    event.preventDefault();
+
     updateCard({
       ...card,
       [event.currentTarget.name]: event.currentTarget.value,
     });
   };
-  const { name, title, message, fileName, theme, cardMaker } = card;
+
   const onSubmit = () => {
     deleteCard(card);
   };
+
   return (
     <form className={styles.form}>
       <input
@@ -39,7 +44,7 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
         type='text'
         name='name'
         value={name}
-        placeholder='Name'
+        placeholder='Name (Max 12)'
         onChange={onChange}
       />
       <input
@@ -48,7 +53,7 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
         type='text'
         name='title'
         value={title}
-        placeholder='Title'
+        placeholder='Title (Max 12)'
         onChange={onChange}
       />
       <input
@@ -57,7 +62,7 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
         type='text'
         name='cardMaker'
         value={cardMaker}
-        placeholder='Maker'
+        placeholder='Maker (Max 12)'
         onChange={onChange}
       />
       <select
@@ -76,7 +81,7 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
         className={styles.textarea}
         name='message'
         value={message}
-        placeholder='Message'
+        placeholder='Message (Max 30)'
         onChange={onChange}
       ></textarea>
       <FileInput name={fileName} onFileChange={onFileChange} />
