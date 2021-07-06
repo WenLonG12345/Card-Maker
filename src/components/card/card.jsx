@@ -11,8 +11,13 @@ const Card = memo(({ card }) => {
   const url = fileURL || DEFAULT_IMAGE;
   const maker = cardMaker || DEFAULT_MAKER;
   const cardRef = useRef();
+
   const onCaptureBtn = () => {
-    domtoimage.toBlob(cardRef.current).then((blob) => {
+    const filter = (card) => {
+      return card.tagName !== 'BUTTON';
+    };
+    let card = cardRef.current;
+    domtoimage.toBlob(card, { filter: filter }).then((blob) => {
       saveAs(blob, 'card_maker.png');
     });
   };
