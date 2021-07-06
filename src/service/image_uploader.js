@@ -8,6 +8,7 @@ class ImageUploader {
       {
         method: 'POST',
         body: data,
+        secure: true,
       }
     );
     return await result.json();
