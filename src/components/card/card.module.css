@@ -1,6 +1,12 @@
 @value makerFormBorder, makerBlack, makerThemeColor, makerBoxShadow, makerBlue, makerDefaultBorder, makerWhite from '/src/common/colors.css';
 
+.cardContainer {
+  display: flex;
+  justify-content: center;
+}
+
 .card {
+  width: 100%;
   position: relative;
   display: flex;
   align-items: center;
@@ -8,7 +14,6 @@
   max-width: 35rem;
   height: 13.75rem;
   padding: 1.5em;
-  margin: auto;
   margin-bottom: 1rem;
 
   box-shadow: makerBoxShadow;
@@ -63,4 +68,14 @@
   position: absolute;
   right: 0.875rem;
   bottom: 0.875rem;
+}
+
+.downBtn {
+  position: absolute;
+  background: makerWhite;
+  color: makerBlue;
+  border: 1px solid makerBlue;
+  bottom: 0.875rem;
+  left: 0.875rem;
+  cursor: pointer;
 }
