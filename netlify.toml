@@ -1,0 +1,4 @@
+[[redirects]]
+    from = "https://by-card-maker.netlify.app/maker"
+    to = "https://by-card-maker.netlify.app/"
+    status = 200
