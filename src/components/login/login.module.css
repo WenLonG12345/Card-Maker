@@ -8,6 +8,7 @@
   border: 1px solid makerDefaultBorder;
   border-radius: 8px;
   box-shadow: makerBoxShadow;
+  z-index: 1;
 }
 
 .description {
