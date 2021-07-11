@@ -33,10 +33,10 @@
 - Cloudinary로 이미지 편집 및 업로드를 구현했습니다.
 - dom-to-image, FileSaver.js로 카드 저장 기능을 구현했습니다.
 - [드림코딩](https://academy.dream-coding.com/) 명함 만들기 프로젝트의 UI/UX를 변경, 기능을 확장한 버전입니다.
-  ||기존 버전|업데이트 버전|
-  |--|--|--|--|--
-  |로그인 화면|<img width="1200" alt="기존 버전 로그인" src="https://user-images.githubusercontent.com/66554164/125198438-d0c0bd80-e29c-11eb-8630-6390d950e245.png">|<img width="1200" alt="업데이트 버전 로그인" src="https://user-images.githubusercontent.com/66554164/125198354-86d7d780-e29c-11eb-9be4-b13f40a29a0f.png">
-  |메인 화면|<img width="1200" alt="기존 버전 메인" src="https://user-images.githubusercontent.com/66554164/125198510-25643880-e29d-11eb-90c6-8388e176447c.png">|<img width="1200" alt="업데이트 버전 메인" src="https://user-images.githubusercontent.com/66554164/125198570-4b89d880-e29d-11eb-8212-2ce7e0af4bc6.png">
+  | |기존 버전|업데이트 버전|
+  |--|--|--|
+  |로그인 화면|<img width="1200" alt="기존 버전 로그인" src="https://user-images.githubusercontent.com/66554164/125198438-d0c0bd80-e29c-11eb-8630-6390d950e245.png">|<img width="1200" alt="업데이트 버전 로그인" src="https://user-images.githubusercontent.com/66554164/125198354-86d7d780-e29c-11eb-9be4-b13f40a29a0f.png">|
+  |메인 화면|<img width="1200" alt="기존 버전 메인" src="https://user-images.githubusercontent.com/66554164/125198510-25643880-e29d-11eb-90c6-8388e176447c.png">|<img width="1200" alt="업데이트 버전 메인" src="https://user-images.githubusercontent.com/66554164/125198570-4b89d880-e29d-11eb-8212-2ce7e0af4bc6.png">|
 
 ### Built With 🛠
 
