@@ -1,68 +1,78 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#card-maker">Card Maker</a></li>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
 
-## Available Scripts
+## About The Project
 
-In the project directory, you can run:
+### Card Maker
 
-### `yarn start`
+![card-maker](https://user-images.githubusercontent.com/66554164/125184189-97655f00-e256-11eb-8053-fb99264ecf4d.png)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- 생일 축하 카드 🎉, 응원 카드 🙌 등 다양한 메시지를 전할 수 있는 카드 메이커입니다.
+- 지인들과 공유, 실사용이 가능한 서비스를 위해 제작 되었습니다.
+- React로 제작, Firebase로 로그인 및 DB 구현, Netlify로 배포했습니다.
+- React Router로 로그인, 로그아웃 페이지 전환을 구현했습니다.
+- Cloudinary로 이미지 편집 및 업로드를 구현했습니다.
+- dom-to-image, FileSaver.js로 카드 저장 기능을 구현했습니다.
+- [드림코딩](https://academy.dream-coding.com/) 명함 만들기 프로젝트의 UI/UX를 변경, 기능을 확장한 버전입니다.
+  ||기존 버전|업데이트 버전|
+  |--|--|--|--|--
+  |로그인 화면|<img width="1200" alt="기존 버전 로그인" src="https://user-images.githubusercontent.com/66554164/125198438-d0c0bd80-e29c-11eb-8630-6390d950e245.png">|<img width="1200" alt="업데이트 버전 로그인" src="https://user-images.githubusercontent.com/66554164/125198354-86d7d780-e29c-11eb-9be4-b13f40a29a0f.png">
+  |메인 화면|<img width="1200" alt="기존 버전 메인" src="https://user-images.githubusercontent.com/66554164/125198510-25643880-e29d-11eb-90c6-8388e176447c.png">|<img width="1200" alt="업데이트 버전 메인" src="https://user-images.githubusercontent.com/66554164/125198570-4b89d880-e29d-11eb-8212-2ce7e0af4bc6.png">
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Built With 🛠
 
-### `yarn test`
+- [React.js](https://ko.reactjs.org/)
+- [PostCSS](https://postcss.org/)
+- [Firebase](https://firebase.google.com/?hl=ko)
+- [Netlify](https://app.netlify.com/sites/by-card-maker/deploys)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `yarn build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- npm
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/ByungyeonKim/Card-Maker.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
 
-### `yarn eject`
+## Contact
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+김병연 - viva_kby@naver.com
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Card Maker - https://by-card-maker.netlify.app/
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Acknowledgements
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- [React Router](https://reactrouter.com/web/guides/quick-start)
+- [Cloudinary](https://cloudinary.com/)
+- [Dom To Image](https://github.com/tsayen/dom-to-image)
+- [File Saver](https://github.com/eligrey/FileSaver.js/)
+- [Particles Bg](https://github.com/lindelof/particles-bg)
+- [Font Awesome](https://fontawesome.com/)
