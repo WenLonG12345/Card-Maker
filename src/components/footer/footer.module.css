@@ -1,7 +1,17 @@
+@value makerNavy from '/src/common/colors.css';
+
 .footer h1 {
   margin: 20px 0 16px;
   color: makerGray;
   font-weight: 800;
   font-style: italic;
   text-align: center;
+}
+
+.link {
+  color: makerNavy;
+}
+
+.link:hover svg {
+  transform: scale(1.1);
 }
